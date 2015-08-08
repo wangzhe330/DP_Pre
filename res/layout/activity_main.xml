@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dp2.MainActivity" >
+
+   
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+    
+    <RelativeLayout
+        android:id="@+id/aboveLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+        
+        
+
+        <RelativeLayout
+            android:id="@+id/main_relativeLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#dbdbdb"
+            android:orientation="vertical" >
+
+           	<LinearLayout
+	            android:id="@+id/fragmentRoot"
+	            android:orientation = "vertical"
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent" />
+
+            <LinearLayout
+                android:id="@+id/bottomList"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/pink"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/bottomItemCurrentBg1"
+                    style="@style/main_bottom_item" >
+
+                    <RadioButton
+                        android:id="@+id/rbFind"
+                        style="@style/footbar"
+                        
+                        android:drawableTop="@drawable/nav_find"
+                        android:paddingTop="8dp"
+                        android:text="发现" />
+                </LinearLayout>
+				
+				<LinearLayout
+                    android:id="@+id/bottomItemCurrentBg2"
+                    style="@style/main_bottom_item" >
+
+                    <RadioButton
+                        android:id="@+id/rbSearch"
+                        style="@style/footbar"
+                        
+                        android:drawableTop="@drawable/nav_search"
+                        android:paddingTop="8dp"
+                        android:text="搜索" />
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:id="@+id/bottomItemCurrentBg3"
+                    style="@style/main_bottom_item" >
+
+                    <RadioButton
+                        android:id="@+id/rbPlan"
+                        style="@style/footbar"
+                        android:drawableTop="@drawable/nav_plan"
+                        android:paddingTop="8dp"
+                        android:text="行程" />
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:id="@+id/bottomItemCurrentBg4"
+                    style="@style/main_bottom_item" >
+
+                    <RadioButton
+                        android:id="@+id/rbMe"
+                        style="@style/footbar"
+                        android:drawableTop="@drawable/nav_me"
+                        android:paddingTop="8dp"
+                        android:text="我的" />
+                </LinearLayout>
+
+			<!--  
+                <LinearLayout
+                    android:id="@+id/bottomItemCurrentBg4"
+                    style="@style/main_bottom_item" >
+
+                    <RadioButton
+                        android:id="@+id/rbMe"
+                        style="@style/footbar"
+                        android:drawableTop="@drawable/tab_settings_normal"
+                        android:paddingTop="8dp"
+                        android:text="我" />
+                </LinearLayout>
+                -->
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+    
+</RelativeLayout>

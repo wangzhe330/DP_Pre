@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources> 
+	<string-array name="food">
+	    <item>京酱肉丝</item>  
+	    <item>红烧小排</item>  
+	    <item>肉夹馍</item>  
+	    <item>可乐</item>  
+	</string-array>
+	
+	<string-array name="distance">
+	    <item>100m</item>  
+	    <item>500m</item>  
+	    <item>1km</item>  
+	    <item>10km</item>  
+	</string-array>
+	
+	<string-array name="degree">
+	    <item>1</item>  
+	    <item>2</item>  
+	    <item>3</item>  
+	    <item>4</item>  
+	</string-array>
+</resources>

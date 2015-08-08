@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/white"
+    >
+    
+    <!-- 放置选择的listview -->
+  	<RelativeLayout 
+        android:id="@+id/plan_select"
+        android:layout_width="fill_parent"
+        android:layout_height="180dp"
+        >
+        <!--
+        <ListView 
+            android:id="@+id/plan_select_listview"
+            android:layout_width="fill_parent"  
+			android:layout_height="wrap_content"  
+			android:divider="#b5b5b5"  
+			android:dividerHeight="1dp"         
+            />   
+        -->
+        
+        <!-- 
+        
+         -->
+        
+        <com.mobeta.android.dslv.DragSortListView 
+            
+            xmlns:android="http://schemas.android.com/apk/res/android"
+		    xmlns:dslv="http://schemas.android.com/apk/res/com.example.dp2"
+		    android:id="@+id/plan_select_listview"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:layout_margin="3dp"
+		    android:choiceMode="multipleChoice"
+		    android:dividerHeight="1px"
+		    android:padding="3dp"
+		    dslv:click_remove_id="@id/click_remove"
+		    dslv:collapsed_height="1px"
+		    dslv:drag_enabled="true"
+		    dslv:drag_handle_id="@id/drag_handle"
+		    dslv:drag_scroll_start="0.33"
+		    dslv:drag_start_mode="onDown"
+		    dslv:float_alpha="0.6"
+		    dslv:remove_enabled="true"
+		    dslv:remove_mode="clickRemove"
+		    dslv:slide_shuffle_speed="0.3" />                     
+        
+    </RelativeLayout>
+    
+
+	<RelativeLayout 
+	    android:id="@+id/plan_time"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/plan_select"
+	    >
+	    <LinearLayout
+	        android:id="@+id/time_show"
+	        android:layout_width="200dip"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:gravity="center"
+	        android:orientation="horizontal"
+	        android:paddingBottom="10dp" >
+	        <!-- 
+	          android:layout_centerHorizontal="true"
+	          因为这句 使得保持在了父亲控件的中心，但是长度变化的时候，就会左右晃动
+	 -->
+	
+	        <TextView
+	            android:id="@+id/plan_tv_0"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="活动时间：" />
+	        
+	        <TextView
+	            android:id="@+id/plan_minValue"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="10：00" />
+	
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text=" - " />
+	
+	        <TextView
+	            android:id="@+id/plan_maxValue"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="12:00" />
+	    </LinearLayout>
+	    
+	    <LinearLayout
+		    android:layout_below="@id/time_show"
+		    android:id="@+id/seekbar_layout"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:paddingBottom="10dp" />
+	</RelativeLayout>
+	
+	<RelativeLayout 
+	    android:id="@+id/plan_result"
+	    android:layout_height="wrap_content"
+	    android:layout_width="fill_parent"
+	    android:layout_below="@id/plan_time"	    
+	    ></RelativeLayout>
+	
+</RelativeLayout>

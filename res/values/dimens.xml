@@ -1,0 +1,14 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="thumnail_default_width">100dip</dimen>
+	<dimen name="thumnail_default_height">100dip</dimen>
+	
+	<!-- name="item_height">67dp -->
+	
+	<dimen name="item_height">40dp</dimen>
+    <dimen name="section_div_height">20dp</dimen>
+
+</resources>
